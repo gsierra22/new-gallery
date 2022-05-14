@@ -6,9 +6,7 @@ import axios from 'axios';
 
 function App() {
   const [gallery, setGallery]=useState([]);
-
-
-
+  
   useEffect(()=>{
     getGallery()
   },[])
@@ -26,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Body test={9*9}></Body>
+      <Body test={gallery}></Body>
     </div>
   );
 }
