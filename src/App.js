@@ -1,10 +1,14 @@
 
 import './App.css';
 import Body from './components/Body/Body'
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import axios from 'axios';
 
 function App() {
+  const [gallery, setGallery]=useState([]);
+
+
+
   useEffect(()=>{
     getGallery()
   },[])
@@ -13,6 +17,7 @@ function App() {
     console.log('getGallary');
     axios.get('/gallery').then((response)=>{
       console.log(response.data);
+      setGallery(response.data)
     }).catch((err)=>{
       alert('error!');
       console.log(err)
