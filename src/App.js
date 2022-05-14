@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Body from './components/Body/Body'
 import {useEffect} from 'react'
+import axios from 'axios';
 
 function App() {
   useEffect(()=>{
@@ -9,7 +10,13 @@ function App() {
   },[])
 
   const getGallery =()=>{
-    console.log('hallo!')
+    console.log('getGallary');
+    axios.get('/gallery').then((response)=>{
+      console.log(response.data);
+    }).catch((err)=>{
+      alert('error!');
+      console.log(err)
+    })
   }
 
   return (
