@@ -1,6 +1,6 @@
 # Photo Gallery
 
-I am remaking my photo gallery to test my knowledge and memory of react
+I am remaking my photo gallery to test my knowledge and memory of react. This app will allow users to view pictures and update their likes.
 
 ## Prerequisites
 
