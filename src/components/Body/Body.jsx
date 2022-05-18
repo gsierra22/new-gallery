@@ -7,7 +7,7 @@ function Body(props){
         <div>
             <h1>Body</h1>
             <h3>{JSON.stringify(props)}</h3>
-            <GalleryList list={props.gallery}/>
+            <GalleryList gallery={props.gallery}/>
         </div>
     )
 }

@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Body test={gallery}></Body>
+      <Body gallery={gallery}></Body>
     </div>
   );
 }
