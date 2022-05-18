@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
+import GalleryItem from "../GalleryItem/GalleryItem";
 
-function _template(props){
+function GalleryList(props){
 
     return(
         <div>
-            <h1>_template</h1>
+            <h1>GalleryList</h1>
             <h3>{JSON.stringify(props)}</h3>
+            <GalleryItem/>
         </div>
     )
 }
 
-export default _template
+export default GalleryList
