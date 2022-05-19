@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Body gallery={gallery}></Body>
+      <Body gallery={gallery} getGallery={getGallery}></Body>
     </div>
   );
 }
